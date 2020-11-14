@@ -97,7 +97,7 @@ echo("</table>");
 
 <?php
 $sql = 'SELECT avg(zarobki) as srednia from pracownicy where dzial=4';
-echo("<p>zadanie 5 - Średnia zarobków pracowników z działu 4</p>");
+echo("<h2><p>zadanie 5 - Średnia zarobków pracowników z działu 4</p></h2>");
 $result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where dzial=4');
 echo("<table>");
 echo("<th>Średnia</th>");
@@ -108,3 +108,45 @@ echo("</tr>");
 }
 echo("</table>");
 ?> 
+
+<?php
+$sql = 'SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a" and (dzial=1 or dzial=2)';
+echo("<h2><p>zadanie 6 - Średnia zarobków mężczyzn z działu 1 i 2</p></h2>");
+$result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a" and (dzial=1 or dzial=2)');
+echo("<table>");
+echo("<th>Średnia</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["srednia"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>");
+?>
+         
+<?php
+$sql = 'SELECT count(imie) as ilosc FROM pracownicy';
+echo("<h2><p>zadanie 7 - Ile jest wszystkich pracowników</p></h2>");
+$result = $conn->query('SELECT count(imie) as ilosc FROM pracownicy');
+echo("<table>");
+echo("<th>Ilość</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["ilosc"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>");
+?>
+         
+<?php
+$sql = 'SELECT count(imie) as ilosc from pracownicy where imie like "%a" and (dzial=1 or dzial=3)';
+echo("<h2><p>zadanie 8 - Ile kobiet pracuje łącznie w działach 1 i 3</p></h2>");  
+$result = $conn->query('SELECT count(imie) as ilosc from pracownicy where imie like "%a" and (dzial=1 or dzial=3)');
+echo("<table>");
+echo("<th>Ilość</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["ilosc"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>");
+?>
