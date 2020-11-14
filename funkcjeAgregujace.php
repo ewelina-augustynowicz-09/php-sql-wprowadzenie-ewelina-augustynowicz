@@ -238,3 +238,18 @@ echo("</tr>");
 }
 echo("</table>");
 ?>
+
+<?php
+echo("<h2><p>zadanie 2 - Średnie zarobków mężczyzn w poszczególnych działach większe od 30</p>");
+$result = $conn->query('SELECT avg(zarobki) as srednia, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org AND imie not like "%a" group by dzial having avg(zarobki)>30');
+echo("<table>");
+echo("<th>Średnia</th>");
+echo("<th>Dzial</th>");
+echo("<th>Nazwa_Działu</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["srednia"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>");
+?>
