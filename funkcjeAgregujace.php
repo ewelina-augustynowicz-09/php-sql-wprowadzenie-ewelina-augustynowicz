@@ -256,7 +256,7 @@ echo("</table>");
 
 <?php	
 echo("<h2><p>zadanie 3 -Ilość pracowników w poszczególnych działach większa od 3</p></h2>");
-$result = $conn->query('SELECT count(imie) as ilosc, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial having count(imie)>3);
+$result = $conn->query('SELECT count(imie) as ilosc, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial having count(imie)>3');
 echo("<table>");
 echo("<th>Ilość</th>");
 echo("<th>Dzial</th>");
