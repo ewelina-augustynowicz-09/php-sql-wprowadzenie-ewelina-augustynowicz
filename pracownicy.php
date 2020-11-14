@@ -35,7 +35,7 @@ if (!$conn) {
 
 <?php
 $sql = 'SELECT  * FROM pracownicy WHERE dzial=2';
-echo ("<h2><p>zadanie 1 Pracownicy tylko z działu 2</p></h2>");
+echo ("<h2><p>zadanie 1 - Pracownicy tylko z działu 2</p></h2>");
 echo ("<p>select * from pracownicy where dzial=2");
 $result = $conn->query($sql);
 echo("<table>");
@@ -57,7 +57,7 @@ echo("</table>")
 <?php
 
 $sql = 'SELECT * FROM pracownicy WHERE (dzial=2 OR dzial=3)';
-echo ("<h2><p>zadanie 2 Pracownicy tylko z działu 2 i z działu 3</p></h2>");
+echo ("<h2><p>zadanie 2 - Pracownicy tylko z działu 2 i z działu 3</p></h2>");
 echo ("<p>select * from pracownicy where (dzial=2 or dzial=3)");
 $result = $conn->query($sql);
 echo("<table>");
@@ -80,7 +80,7 @@ echo("</table>")
 <?php
 
 $sql = 'SELECT * FROM pracownicy WHERE zarobki<30';
-echo ("<h2><p>zadanie 3 Pracownicy tylko z zarobkami mniejszymi niż 30</p></h2>");
+echo ("<h2><p>zadanie 3 - Pracownicy tylko z zarobkami mniejszymi niż 30</p></h2>");
 echo ("<p>select * from pracownicy where zarobki<30");
 $result = $conn->query($sql);
 echo("<table>");
