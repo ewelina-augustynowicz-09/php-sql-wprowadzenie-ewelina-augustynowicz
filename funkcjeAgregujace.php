@@ -157,5 +157,3 @@ echo("</tr>");
 echo("</table>");
 ?>
 
-
-echo("<h1>Group by</h1>");
