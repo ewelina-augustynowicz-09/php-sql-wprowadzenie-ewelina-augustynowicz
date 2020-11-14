@@ -142,3 +142,81 @@ echo("</table>");
 ?>
 
 <h1>Group by</h1>
+
+<?php
+echo("<h2><p>zadanie 1 - Suma zarobków w poszczególnych działach</p></h2>");
+$result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+echo("<table>");
+echo("<th>Dział</th>");
+echo("<th>Suma</th>");
+echo("<th>Nazwa_Działu</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>");
+?>              
+                
+            
+   
+<?php
+echo("<p>zadanie 2 - Ilość pracowników w poszczególnych działach</p>");
+$result = $conn->query('SELECT dzial, count(imie) as ilosc, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+echo("<table>");
+echo("<th>Dział</th>");
+echo("<th>Ilość</th>");
+echo("<th>Nazwa_Działu</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["dzial"]."</td><td>".$row["ilosc"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>");
+?>                
+                  
+                
+<?php
+echo("<p>zadanie 3 -Średnie zarobków w poszczególnych działach</p>");
+$result = $conn->query('SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+echo("<table>");
+echo("<th>Dział</th>");
+echo("<th>Średnia</th>");
+echo("<th>Nazwa_Działu</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["dzial"]."</td><td>".$row["srednia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>");
+?>
+                     
+               
+<?php
+echo("<p>zadanie 4 - Suma zarobków kobiet i mężczyzn</p>");
+$result = $conn->query('SELECT sum(zarobki) as suma, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec');
+echo("<table border>");
+echo("<th>Suma</th>");
+echo("<th>Płeć</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["suma"]."</td><td>".$row["plec"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>");
+?>
+   
+                
+<?php
+echo("<p>zadanie 5 - Średnia zarobków kobiet i mężczyzn</p>");
+$result = $conn->query('SELECT avg(zarobki) as srednia, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec');
+echo("<table border>");
+echo("<th>Średnia</th>");
+echo("<th>Płeć</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["srednia"]."</td><td>".$row["plec"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>"); 
+?> 
