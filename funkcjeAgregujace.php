@@ -221,6 +221,6 @@ echo("</tr>");
 echo("</table>"); 
 ?> 
 
-
+<h1>Klauzula having</h1>
 
 
