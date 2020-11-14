@@ -31,9 +31,7 @@ if (!$conn) {
 </html>
 
 <?php
-$sql = 'SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial';
 echo ("<h2><p>zadanie 1 - Suma zarobków wszystkich pracowników </p></h2>");
-echo ("<p>select dzial, sum(zarobki) as suma, nazwa_dzial from `pracownicy`, `organizacja` where dzial = id_org group by dzial");
 $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
 echo("<table>");
 echo("<th>Dzial</th>");
@@ -48,9 +46,7 @@ echo("</table>");
 ?>
 	
 <?php
-$sql = 'SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM `pracownicy';
 echo ("<h2><p>zadanie 2 - Suma zarobków wszystkich kobiet </p></h2>");
-echo ("<p>select dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial from `pracownicy");
 $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
 echo("<table>");
 echo("<th>Dział</th>");
@@ -68,7 +64,6 @@ echo("</table>");
 ?>
         
 <?php
-$sql = 'SELECT sum(zarobki) as suma FROM pracownicy where imie not like "%a" and (dzial=2 or dzial=3)'; 
 echo ("<h2><p>zadanie 3 - Suma zarobków mężczyzn pracujących w dziale 2 i 3 </p></h2>"); 
 $result = $conn->query('SELECT sum(zarobki) as suma FROM pracownicy where imie not like "%a" and (dzial=2 or dzial=3)');
 echo("<table>");
@@ -82,7 +77,6 @@ echo("</table>");
 ?>
 
 <?php 
-$sql = 'SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a"';
 echo("<h2><p>zadanie 4 - Średnia zarobków wszystkich mężczyzn</p></h2>");
 $result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a"');
 echo("<table>");
@@ -96,7 +90,6 @@ echo("</table>");
 ?>
 
 <?php
-$sql = 'SELECT avg(zarobki) as srednia from pracownicy where dzial=4';
 echo("<h2><p>zadanie 5 - Średnia zarobków pracowników z działu 4</p></h2>");
 $result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where dzial=4');
 echo("<table>");
@@ -110,7 +103,6 @@ echo("</table>");
 ?> 
 
 <?php
-$sql = 'SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a" and (dzial=1 or dzial=2)';
 echo("<h2><p>zadanie 6 - Średnia zarobków mężczyzn z działu 1 i 2</p></h2>");
 $result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a" and (dzial=1 or dzial=2)');
 echo("<table>");
@@ -124,7 +116,6 @@ echo("</table>");
 ?>
          
 <?php
-$sql = 'SELECT count(imie) as ilosc FROM pracownicy';
 echo("<h2><p>zadanie 7 - Ile jest wszystkich pracowników</p></h2>");
 $result = $conn->query('SELECT count(imie) as ilosc FROM pracownicy');
 echo("<table>");
@@ -138,7 +129,6 @@ echo("</table>");
 ?>
          
 <?php
-$sql = 'SELECT count(imie) as ilosc from pracownicy where imie like "%a" and (dzial=1 or dzial=3)';
 echo("<h2><p>zadanie 8 - Ile kobiet pracuje łącznie w działach 1 i 3</p></h2>");  
 $result = $conn->query('SELECT count(imie) as ilosc from pracownicy where imie like "%a" and (dzial=1 or dzial=3)');
 echo("<table>");
