@@ -266,5 +266,5 @@ echo("<tr>");
 echo("<td>".$row["ilosc"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
 echo("</tr>");
 }
-echo("</table>")
+echo("</table>");
 ?>
