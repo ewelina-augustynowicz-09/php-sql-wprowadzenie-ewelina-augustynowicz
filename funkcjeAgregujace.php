@@ -80,3 +80,16 @@ echo("</tr>");
 }
 echo("</table>");
 ?>
+
+<?php 
+$sql = 'SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a"';
+echo("<p>zadanie 4 - Średnia zarobków wszystkich mężczyzn</p>");
+echo("<table>");
+echo("<th>Średnia</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["srednia"]."</td>"); 
+echo("</tr>");
+}               
+echo("</table>");
+?>
