@@ -47,22 +47,3 @@ echo("</tr>");
 echo("</table>");
 ?>
 	 
-<?php
-$sql = 'SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM `pracownicy';
-echo ("<h2><p>zadanie 2 - Suma zarobków wszystkich kobiet </p></h2>");
-echo ("<p>select dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial from `pracownicy");
-$result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
-echo("<table>");
-echo("<th>Dział</th>");
-echo("<th>Suma</th>");
-echo("<th>Średnia</th>");
-echo("<th>Min</th>");
-echo("<th>Max</th>");
-echo("<th>Nazwa_Działu</th>");
-while($row = $result->fetch_assoc()) {
-echo("<tr>");
-echo("<td>".$row['dzial']."</td><td>".$row['suma']."</td><td>".$row['srednia']."</td><td>".$row['min']."</td><td>".$row['max']."</td><td>".$row["nazwa_dzial"]."</td>");
-echo("</tr>");
-}
-echo("</table>");
-?>
