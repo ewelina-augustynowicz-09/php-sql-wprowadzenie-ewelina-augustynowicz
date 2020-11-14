@@ -34,10 +34,8 @@ if (!$conn) {
 
 
 <?php
-$sql = 'SELECT  * FROM pracownicy WHERE dzial=2';
 echo ("<h2><p>zadanie 1 - Pracownicy tylko z działu 2</p></h2>");
-echo ("<p>select * from pracownicy where dzial=2");
-$result = $conn->query($sql);
+$result = $conn->query('SELECT  * FROM pracownicy WHERE dzial=2');
 echo("<table>");
 echo("<th>id</th>");
 echo("<th>imie</th>");
