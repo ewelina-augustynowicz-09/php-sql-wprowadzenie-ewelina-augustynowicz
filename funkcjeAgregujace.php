@@ -220,3 +220,50 @@ echo("</tr>");
 }
 echo("</table>"); 
 ?> 
+
+<h1>klauzula HAVING</h1>
+
+<?php
+echo("<h2><p>zadanie 1 - Suma zarobków w poszczególnych działach mniejsza od 28</p></h2>");
+$result = $conn->query('SELECT sum(zarobki) as suma, dzial, nazwa_dzial from pracownicy, organizacja where dzial=id_org GROUP BY dzial HAVING sum(zarobki)<28');
+echo("<table>");
+echo("<th>Suma</th>");
+echo("<th>Dzial</th>");
+echo("<th>Nazwa_Działu</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["suma"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>");
+?>
+
+<?php
+echo("<h2><p>zadanie 2 - Średnie zarobków mężczyzn w poszczególnych działach większe od 30</p>");
+$result = $conn->query('SELECT avg(zarobki) as srednia, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org AND imie not like "%a" group by dzial having avg(zarobki)>30');
+echo("<table>");
+echo("<th>Średnia</th>");
+echo("<th>Dzial</th>");
+echo("<th>Nazwa_Działu</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["srednia"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>");
+?>
+	 
+<?php	
+echo("<h2><p>zadanie 3 -Ilość pracowników w poszczególnych działach większa od 3</p></h2>");
+$result = $conn->query('SELECT count(imie) as ilosc, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial having count(imie)>3);
+echo("<table>");
+echo("<th>Ilość</th>");
+echo("<th>Dzial</th>");
+echo("<th>Nazwa_Działu</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["ilosc"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>")
+?>
