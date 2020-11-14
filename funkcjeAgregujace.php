@@ -84,7 +84,7 @@ echo("</table>");
 <?php 
 $sql = 'SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a"';
 echo("<h2><p>zadanie 4 - Średnia zarobków wszystkich mężczyzn</p></h2>");
-$result = $conn->query($sql);
+$result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a"');
 echo("<table>");
 echo("<th>Średnia</th>");
 while($row=$result->fetch_assoc()){ 
