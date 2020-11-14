@@ -1,0 +1,25 @@
+body {
+background-color: #EE82EE;
+}
+
+.nav_link{
+color: purple;
+}
+
+.button {
+  bottom: auto;
+  background-color: white;
+  border: rgb(247, 135, 56);
+  color: white;
+  padding: 11px 18px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+
+.button:hover {
+  background-color: GreenYellow;
+  color: rgb(248, 16, 16);
+}
