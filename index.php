@@ -20,7 +20,7 @@ if (!$conn) {
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="button"><a href="">github</a></div>
+<div class="button"><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></div>
 <a class="nav_link" href="index.php"> Strona głowna</a><br />
 <a class="nav_link" href="pracownicy.php"> Pracownicy </a><br />
 <a class="nav_link" href="pracownicyiorganizacja.php"> Pracownicy i organizacja </a><br />
