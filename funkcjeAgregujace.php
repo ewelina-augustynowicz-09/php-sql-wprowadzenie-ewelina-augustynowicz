@@ -161,7 +161,7 @@ echo("</table>");
             
    
 <?php
-echo("<p>zadanie 2 - Ilość pracowników w poszczególnych działach</p>");
+echo("<h2><p>zadanie 2 - Ilość pracowników w poszczególnych działach</p></h2>");
 $result = $conn->query('SELECT dzial, count(imie) as ilosc, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
 echo("<table>");
 echo("<th>Dział</th>");
@@ -177,7 +177,7 @@ echo("</table>");
                   
                 
 <?php
-echo("<p>zadanie 3 -Średnie zarobków w poszczególnych działach</p>");
+echo("<h2><p>zadanie 3 -Średnie zarobków w poszczególnych działach</p></h2>");
 $result = $conn->query('SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
 echo("<table>");
 echo("<th>Dział</th>");
@@ -193,7 +193,7 @@ echo("</table>");
                      
                
 <?php
-echo("<p>zadanie 4 - Suma zarobków kobiet i mężczyzn</p>");
+echo("<h2><p>zadanie 4 - Suma zarobków kobiet i mężczyzn</p></h2>");
 $result = $conn->query('SELECT sum(zarobki) as suma, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec');
 echo("<table border>");
 echo("<th>Suma</th>");
@@ -208,7 +208,7 @@ echo("</table>");
    
                 
 <?php
-echo("<p>zadanie 5 - Średnia zarobków kobiet i mężczyzn</p>");
+echo("<h2><p>zadanie 5 - Średnia zarobków kobiet i mężczyzn</p></h2>");
 $result = $conn->query('SELECT avg(zarobki) as srednia, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec');
 echo("<table border>");
 echo("<th>Średnia</th>");
