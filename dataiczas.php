@@ -29,16 +29,3 @@ if (!$conn) {
     <h1><b>Data i czas</b></h1>
 
 </html>
-
-<?php
-echo("<h2><p>zadanie 8 - Ile kobiet pracuje łącznie w działach 1 i 3</p></h2>");  
-$result = $conn->query('SELECT count(imie) as ilosc from pracownicy where imie like "%a" and (dzial=1 or dzial=3)');
-echo("<table>");
-echo("<th>Ilość</th>");
-while($row=$result->fetch_assoc()){ 
-echo("<tr>");
-echo("<td>".$row["ilosc"]."</td>"); 
-echo("</tr>");
-}
-echo("</table>");
-?>
