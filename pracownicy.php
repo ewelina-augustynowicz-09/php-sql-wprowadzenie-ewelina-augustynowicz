@@ -42,7 +42,6 @@ echo("<th>imie</th>");
 echo("<th>dzial</th>");
 echo("<th>zarobki</th>");
 echo("<th>data urodzenia</th>");
-
 while($row = $result->fetch_assoc()) {
 echo("<tr>");
 echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
@@ -53,46 +52,36 @@ echo("</table>")
 
 
 <?php
-
-$sql = 'SELECT * FROM pracownicy WHERE (dzial=2 OR dzial=3)';
 echo ("<h2><p>zadanie 2 - Pracownicy tylko z działu 2 i z działu 3</p></h2>");
-echo ("<p>select * from pracownicy where (dzial=2 or dzial=3)");
-$result = $conn->query($sql);
+$result = $conn->query('SELECT * FROM pracownicy WHERE (dzial=2 OR dzial=3)');
 echo("<table>");
 echo("<th>id</th>");
 echo("<th>imie</th>");
 echo("<th>dzial</th>");
 echo("<th>zarobki</th>");
 echo("<th>data urodzenia</th>");
-
 while($row = $result->fetch_assoc()) {
 echo("<tr>");
 echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
 echo("</tr>");
 }
 echo("</table>")
-
 ?>
 
 
 <?php
-
-$sql = 'SELECT * FROM pracownicy WHERE zarobki<30';
 echo ("<h2><p>zadanie 3 - Pracownicy tylko z zarobkami mniejszymi niż 30</p></h2>");
-echo ("<p>select * from pracownicy where zarobki<30");
-$result = $conn->query($sql);
+$result = $conn->query('SELECT * FROM pracownicy WHERE zarobki<30');
 echo("<table>");
 echo("<th>id</th>");
 echo("<th>imie</th>");
 echo("<th>dzial</th>");
 echo("<th>zarobki</th>");
 echo("<th>data urodzenia</th>");
-
 while($row = $result->fetch_assoc()) {
 echo("<tr>");
 echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
 echo("</tr>");
 }
 echo("</table>")
-
 ?>
