@@ -221,7 +221,6 @@ echo("</tr>");
 echo("</table>"); 
 ?> 
 
-<h1>klauzula HAVING</h1>
 
 <?php
 echo("<h2><p>zadanie 1 - Suma zarobków w poszczególnych działach mniejsza od 28</p></h2>");
