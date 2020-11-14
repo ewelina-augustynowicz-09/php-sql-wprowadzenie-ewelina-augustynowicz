@@ -68,10 +68,10 @@ echo("</table>");
 ?>
         
 <?php
-$sql = 'SELECT sum(zarobki) as suma from pracownicy where imie not like "%a" and (dzial=2 or dzial=3)';
+$sql = 'SELECT sum(zarobki) as suma FROM pracownicy where imie not like "%a' and (dzial=2 or dzial=3)';
 echo ("<h2><p>zadanie 3 - Suma zarobków mężczyzn pracujących w dziale 2 i 3 </p></h2>");
 echo ("<p>select sum(zarobki) as suma from pracownicy where imie not like "%a" and (dzial=2 or dzial=3)");    
-$result = $conn->query('SELECT sum(zarobki) as suma from pracownicy where imie not like "%a" and (dzial=2 or dzial=3)');
+$result = $conn->query('SELECT sum(zarobki) as suma FROM pracownicy where imie not like "%a" and (dzial=2 or dzial=3)');
 echo("<table>");
 echo("<th>Suma</th>");
 while($row=$result->fetch_assoc()){ 
