@@ -94,3 +94,17 @@ echo("</tr>");
 }               
 echo("</table>");
 ?>
+
+<?php
+$sql = 'SELECT avg(zarobki) as srednia from pracownicy where dzial=4';
+echo("<p>zadanie 5 - Średnia zarobków pracowników z działu 4</p>");
+$result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where dzial=4');
+echo("<table>");
+echo("<th>Średnia</th>");
+while($row=$result->fetch_assoc()){ 
+echo("<tr>");
+echo("<td>".$row["srednia"]."</td>"); 
+echo("</tr>");
+}
+echo("</table>");
+?> 
