@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ewelina";
+$servername = "https://phpmyadmin.alwaysdata.com/phpmyadmin/index.php";
+$username = "ewelina";
+$password = "ewelinailukas";
+$dbname = "ewelina_09";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
