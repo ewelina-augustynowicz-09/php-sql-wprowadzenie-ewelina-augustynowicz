@@ -1,6 +1,6 @@
 <?php
 
-$servername = "https://phpmyadmin.alwaysdata.com/phpmyadmin/index.php";
+$servername = "mysql-ewelina.alwaysdata.net";
 $username = "ewelina";
 $password = "ewelinailukas";
 $dbname = "ewelina_09";
