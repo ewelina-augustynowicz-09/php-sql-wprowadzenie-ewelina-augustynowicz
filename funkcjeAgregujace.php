@@ -140,3 +140,5 @@ echo("</tr>");
 }
 echo("</table>");
 ?>
+
+<h1>Group by</h1>
