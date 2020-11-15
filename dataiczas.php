@@ -232,11 +232,11 @@ $result = $conn->query('SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pr
 echo("<table border>");
 echo("<th>ID</th>");
 echo("<th>Imię</th>");
-echo("<th>Dział</th>");
-echo("<th>Zarobki</th>");
+echo("<th>Data</th>");
+echo("<th>Dzień</th>");
 while($row=$result->fetch_assoc()){ 
 echo("<tr>");
-echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");                   
+echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["Data"]."</td><td>".$row["Dzień"]."</td>");                   
 echo("</tr>");
 }
 echo("</table>");
