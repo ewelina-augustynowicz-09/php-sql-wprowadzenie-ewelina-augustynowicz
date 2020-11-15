@@ -223,3 +223,5 @@ echo("</tr>");
 }
 echo("</table>");
 ?>
+
+<h1>Formatowanie dat</h1>
