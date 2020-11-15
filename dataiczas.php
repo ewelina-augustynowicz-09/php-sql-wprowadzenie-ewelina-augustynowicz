@@ -226,8 +226,4 @@ echo("</table>");
 
 <h1>Formatowanie dat</h1>
 
-<?php
-echo("<h2><p>zadanie 1 - Wyświetl nazwy dni w dacie urodzenia</p></h2>");
-$result = $conn->query('SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pracownicy');
-?>
 
