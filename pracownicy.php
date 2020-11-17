@@ -25,6 +25,7 @@ if (!$conn) {
 <a class="nav_link" href="pracownicyiorganizacja.php"> Pracownicy i organizacja </a><br />
 <a class="nav_link" href="funkcjeAgregujace.php"> Funkcje agregujące </a><br />
 <a class="nav_link" href="dataiczas.php"> Data i czas</a><br />
+<a class="nav_link" href="formularz.html">Formularz</a><br />
 </div>
    
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
