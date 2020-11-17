@@ -31,4 +31,8 @@ if (!$conn) {
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
     <h1><b>Strona główna</b></h1>
 
+<form action="strona.php" method="POST">
+  <input type="text" name="fristname"></br>
+  <input type="submit" value="wyślij do strona.php">
+</form>
 
