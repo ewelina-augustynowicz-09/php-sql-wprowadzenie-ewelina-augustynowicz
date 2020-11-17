@@ -31,19 +31,4 @@ if (!$conn) {
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
     <h1><b>Strona główna</b></h1>
 
-<?php
-echo ("<p>zadanie 1 </p>");
-$result = $conn->query('SELECT * FROM pracownicy');
-echo("<table>");
-echo("<th>id</th>");
-echo("<th>imie</th>");
-echo("<th>dzial</th>");
-echo("<th>zarobki</th>");
-echo("<th>data urodzenia</th>");
-while($row = $result->fetch_assoc()) {
-echo("<tr>");
-echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
-echo("</tr>");
-}
-echo("</table>")
-?>
+
