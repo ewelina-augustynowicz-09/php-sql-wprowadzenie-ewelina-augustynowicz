@@ -36,3 +36,4 @@ if (!$conn) {
   <input type="submit" value="wyślij do strona.php">
 </form>
 
+</html>
