@@ -32,7 +32,7 @@ if (!$conn) {
     <h1><b>Strona główna</b></h1>
 
 <form action="strona.php" method="POST">
-  <input type="text" name="fristname"></br>
+  <input type="text" name="imie"></br>
   <input type="submit" value="wyślij do strona.php">
 </form>
 
