@@ -33,6 +33,7 @@ if (!$conn) {
 <?php
 echo ("<h2><p>zadanie 1 - Suma zarobków wszystkich pracowników </p></h2>");
 $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+echo("<table border>");
 echo("<table>");
 echo("<th>Dzial</th>");
 echo("<th>Suma</th>");
@@ -48,6 +49,7 @@ echo("</table>");
 <?php
 echo ("<h2><p>zadanie 2 - Suma zarobków wszystkich kobiet </p></h2>");
 $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+echo("<table border>");
 echo("<table>");
 echo("<th>Dział</th>");
 echo("<th>Suma</th>");
@@ -66,6 +68,7 @@ echo("</table>");
 <?php
 echo ("<h2><p>zadanie 3 - Suma zarobków mężczyzn pracujących w dziale 2 i 3 </p></h2>"); 
 $result = $conn->query('SELECT sum(zarobki) as suma FROM pracownicy where imie not like "%a" and (dzial=2 or dzial=3)');
+echo("<table border>");
 echo("<table>");
 echo("<th>Suma</th>");
 while($row=$result->fetch_assoc()){ 
@@ -79,6 +82,7 @@ echo("</table>");
 <?php 
 echo("<h2><p>zadanie 4 - Średnia zarobków wszystkich mężczyzn</p></h2>");
 $result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a"');
+echo("<table border>");
 echo("<table>");
 echo("<th>Średnia</th>");
 while($row=$result->fetch_assoc()){ 
@@ -92,6 +96,7 @@ echo("</table>");
 <?php
 echo("<h2><p>zadanie 5 - Średnia zarobków pracowników z działu 4</p></h2>");
 $result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where dzial=4');
+echo("<table border>");
 echo("<table>");
 echo("<th>Średnia</th>");
 while($row=$result->fetch_assoc()){ 
@@ -105,6 +110,7 @@ echo("</table>");
 <?php
 echo("<h2><p>zadanie 6 - Średnia zarobków mężczyzn z działu 1 i 2</p></h2>");
 $result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a" and (dzial=1 or dzial=2)');
+echo("<table border>");
 echo("<table>");
 echo("<th>Średnia</th>");
 while($row=$result->fetch_assoc()){ 
@@ -118,6 +124,7 @@ echo("</table>");
 <?php
 echo("<h2><p>zadanie 7 - Ile jest wszystkich pracowników</p></h2>");
 $result = $conn->query('SELECT count(imie) as ilosc FROM pracownicy');
+echo("<table border>");
 echo("<table>");
 echo("<th>Ilość</th>");
 while($row=$result->fetch_assoc()){ 
@@ -131,6 +138,7 @@ echo("</table>");
 <?php
 echo("<h2><p>zadanie 8 - Ile kobiet pracuje łącznie w działach 1 i 3</p></h2>");  
 $result = $conn->query('SELECT count(imie) as ilosc from pracownicy where imie like "%a" and (dzial=1 or dzial=3)');
+echo("<table border>");
 echo("<table>");
 echo("<th>Ilość</th>");
 while($row=$result->fetch_assoc()){ 
@@ -146,6 +154,7 @@ echo("</table>");
 <?php
 echo("<h2><p>zadanie 1 - Suma zarobków w poszczególnych działach</p></h2>");
 $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+echo("<table border>");
 echo("<table>");
 echo("<th>Dział</th>");
 echo("<th>Suma</th>");
@@ -163,6 +172,7 @@ echo("</table>");
 <?php
 echo("<h2><p>zadanie 2 - Ilość pracowników w poszczególnych działach</p></h2>");
 $result = $conn->query('SELECT dzial, count(imie) as ilosc, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+echo("<table border>");
 echo("<table>");
 echo("<th>Dział</th>");
 echo("<th>Ilość</th>");
@@ -179,6 +189,7 @@ echo("</table>");
 <?php
 echo("<h2><p>zadanie 3 -Średnie zarobków w poszczególnych działach</p></h2>");
 $result = $conn->query('SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+echo("<table border>");
 echo("<table>");
 echo("<th>Dział</th>");
 echo("<th>Średnia</th>");
@@ -227,6 +238,7 @@ echo("</table>");
 <?php
 echo("<h2><p>zadanie 1 - Suma zarobków w poszczególnych działach mniejsza od 28</p></h2>");
 $result = $conn->query('SELECT sum(zarobki) as suma, dzial, nazwa_dzial from pracownicy, organizacja where dzial=id_org GROUP BY dzial HAVING sum(zarobki)<28');
+echo("<table border>");
 echo("<table>");
 echo("<th>Suma</th>");
 echo("<th>Dzial</th>");
@@ -242,6 +254,7 @@ echo("</table>");
 <?php
 echo("<h2><p>zadanie 2 - Średnie zarobków mężczyzn w poszczególnych działach większe od 30</p>");
 $result = $conn->query('SELECT avg(zarobki) as srednia, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org AND imie not like "%a" group by dzial having avg(zarobki)>30');
+echo("<table border>");
 echo("<table>");
 echo("<th>Średnia</th>");
 echo("<th>Dzial</th>");
@@ -257,6 +270,7 @@ echo("</table>");
 <?php	
 echo("<h2><p>zadanie 3 -Ilość pracowników w poszczególnych działach większa od 3</p></h2>");
 $result = $conn->query('SELECT count(imie) as ilosc, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial having count(imie)>3');
+echo("<table border>");
 echo("<table>");
 echo("<th>Ilość</th>");
 echo("<th>Dzial</th>");
