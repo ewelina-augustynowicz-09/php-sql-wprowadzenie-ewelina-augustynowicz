@@ -20,7 +20,7 @@
 
 <?php
 
-echo(<br>$_POST["imie"]</br>);
-echo(<br>$_POST["nazwisko"]</br>);
+echo(<br>$_POST["imie"]);
+echo(<br>$_POST["nazwisko"]);
      
 ?>
