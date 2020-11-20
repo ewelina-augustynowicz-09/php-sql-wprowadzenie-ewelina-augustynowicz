@@ -21,7 +21,6 @@
 <?php
 
 echo($_POST["id_pracownika"]);
-echo('<br>')
 echo($_POST["imie"]);
 echo($_POST['dzial']);
 echo($_POST['zarobki']);
