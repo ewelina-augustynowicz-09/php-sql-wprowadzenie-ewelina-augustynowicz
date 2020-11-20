@@ -20,12 +20,11 @@
 
 <?php
 
-echo($_POST["id_pracownika"]);
 echo($_POST["imie"]);
 echo($_POST['dzial']);
 echo($_POST['zarobki']);
 echo($_POST['data_ur']);
-echo($_POST['nawa_dzialu']);
+
      
 ?>
 
