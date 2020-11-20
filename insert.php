@@ -77,10 +77,10 @@ echo "<li>". $_POST['dzial'];
 echo "<li>". $_POST['zarobki'];
 echo "<li>". $_POST['data_urodzenia'];
 
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$servername = "mysql-ewelina.alwaysdata.net";
+$username = "ewelina";
+$password = "ewelinailukas";
+$dbname = "ewelina_09";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
