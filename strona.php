@@ -41,7 +41,7 @@ die("Connection failed: " . mysqli_connect_error());
 }
 
 require_once('conn.php');
-$sql = "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES (null,john,2,[70,1985-04-15)";
+$sql = "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES (null,william,3,[40,1980-06-06)";
 if ($conn->query($sql) === TRUE) {
 echo "New record created successfully";
 } else {
