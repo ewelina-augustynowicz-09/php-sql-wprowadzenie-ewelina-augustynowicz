@@ -37,17 +37,15 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
 if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql ="INSERT INTO MyGuests (fristname, lastname, email)
-VALUES ('John', 'Doe', 'john@example.com')";
-
-if ($conn->query($sql) --- TRUE {
+require_once('conn.php');
+$sql = "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES (null,john,2,[70,1985-04-15)";
+if ($conn->query($sql) === TRUE) {
 echo "New record created successfully";
 } else {
-echo "Error: " .$sql . "<br>" . $conn->error;
+echo "Error: " . $sql . "<br>" . $conn->error;
 }
-
 $conn->close();
 ?>
