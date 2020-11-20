@@ -29,7 +29,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO pracownicy (null, 'imie', 'dzial', 'zarobki') VALUES (null,'Ksawery', 3, 36,'1995-10-21')";
+$sql = "INSERT INTO pracownicy (null, imie, dzial, zarobki) VALUES (null,'Ksawery', 3, 36,'1995-10-21')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -55,7 +55,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO pracownicy (null, 'imie', 'dzial', 'zarobki') VALUES (null,".$_POST['name'].", 1, 76,'1991-11-21')";
+$sql = "INSERT INTO pracownicy (null, imie, dzial, zarobki) VALUES (null,".$_POST['name'].", 1, 76,'1991-11-21')";
 
 echo "<li>".$sql;
 
