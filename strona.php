@@ -20,8 +20,10 @@
 
 <?php
 
+echo($_POST["id_pracownika"]);
 echo($_POST["imie"]);
-echo($_POST["nazwisko"]);
+echo($_POST['zarobki']);
+echo($_POST['data_ur']);
      
 ?>
 
@@ -42,12 +44,11 @@ die("Connection failed: " . mysqli_connect_error());
 
 
 require_once("connect.php");
-	$sql = "INSERT INTO pracownicy(`imie`, `nazwisko`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['nazwisko']."')";
-	if ($conn->query($sql) === TRUE) {
-        echo("<p class='precord'>  New record created successfully!</p>");
-      } else {
-        echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
-      }
-      
+$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_ur']."')";
+if ($conn->query($sql) === TRUE) {
+echo("<p class='precord'>  New record created successfully!</p>");
+} else {
+echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
+}
 
 ?>
