@@ -44,7 +44,7 @@ die("Connection failed: " . mysqli_connect_error());
 
 
 require_once("connect.php");
-$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_ur']."')";
+$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_ur']."', '".$_POST['nazwa_dzialu']."')";
 if ($conn->query($sql) === TRUE) {
 echo("<p class='precord'>  New record created successfully!</p>");
 } else {
