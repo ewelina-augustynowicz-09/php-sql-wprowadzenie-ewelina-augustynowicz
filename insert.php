@@ -41,9 +41,7 @@ echo "<li>".$sql;
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
+} else 
 
 $conn->close();
 ?>
