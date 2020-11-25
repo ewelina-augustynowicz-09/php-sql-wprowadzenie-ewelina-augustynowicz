@@ -29,7 +29,8 @@ if (!$conn) {
 <a class="nav_link" href="formularz.html">Formularz</a><br />
 <a class="nav_link" href="insert.php">Insert</a><br />
 <a class="nav_link" href="daneDoBazy.html">Dane do bazy</a><br />
-<a class="nav_link" href="petla.php">Pętla</a><br /> 
+<a class="nav_link" href="petla.php">Pętla</a><br />    
+<a class="nav_link" href="delete.php">Delete</a><br /> 
 </div>
    
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
