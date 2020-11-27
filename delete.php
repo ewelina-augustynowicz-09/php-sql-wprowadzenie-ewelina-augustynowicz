@@ -18,13 +18,12 @@
 </div>
    
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
-    <h1><b>Strona główna</b></h1>
+    <h1><b>Delete</b></h1>
 
 
 </html>
 
 <?php
-echo("jestes w delete.php <br>");
 echo $_POST['id_pracownicy'];
 
 $servername = "mysql-ewelina.alwaysdata.net";
