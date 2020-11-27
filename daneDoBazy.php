@@ -46,13 +46,13 @@
 <body>
    <h5>⬆insert</h5>
 <form action="insert.php" method="POST">
-   <h5>imie</h5>
+   <h5>⬆imie</h5>
 <input type="text" name="imie">
-   <h5>dział</h5>
+   <h5>⬆dział</h5>
 <input type="number" name="dzial"></br>
-   <h5>zarobki</h5>
+   <h5>⬆zarobki</h5>
 <input type="number" name="zarobki"></br>
-   <h5>data urodzenia</h5>
+   <h5>⬆data urodzenia</h5>
 <input type="date" name="data_urodzenia"></br>
 <input type="submit" value="dodaj pracownika">
 </form>
