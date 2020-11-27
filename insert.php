@@ -40,10 +40,10 @@ if ($conn->connect_error) {
 echo("<li>imię: ".$_POST['imie']."</li>");
 echo("<li>dział: ".$_POST['dzial']."</li>");
 echo("<li>zarobki: ".$_POST['zarobki']."</li>");
-echo("<li>data urodzenia: ".$_POST['data_ur']."</li>");
+echo("<li>data urodzenia: ".$_POST['data_urodzenia']."</li>");
 
 
-$sql = "INSERT INTO pracownicy (`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_ur`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_ur']."')";
+$sql = "INSERT INTO pracownicy (`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_urodzenia']."')";
 	
 if ($conn->query($sql) === TRUE) {
 echo("<p class='precord'>Nowy pracownik został dodany</p>");
