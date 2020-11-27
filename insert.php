@@ -47,6 +47,7 @@ $sql = "INSERT INTO pracownicy (`id_pracownicy`, `imie`, `dzial`, `zarobki`, `da
 	
 if ($conn->query($sql) === TRUE) {
 echo("<p class='precord'>Nowy pracownik został dodany</p>");
+header ("Location:https://ewelina09.herokuapp.com/daneDoBazy.php");
 } else {
 echo "Error: " . $sql . "<br>" . $conn->error;
 }
