@@ -39,7 +39,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "DELETE FROM pracownicy WHERE id_pracownicy=".$_POST['id_pracownicy'];
+$sql = "DELETE FROM pracownicy WHERE id_pracownicy=".$_POST['id_pracownicy']."";
 
 echo $sql;
 
