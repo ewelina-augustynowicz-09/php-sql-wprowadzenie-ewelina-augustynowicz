@@ -96,7 +96,7 @@ echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzi
 </form>
 usuń
 <form action='delete.php' method='POST'>
-   <input type='number' name='id_pracownicy'></br>
+   <input type='number' name='id' value='".$row["id_pracownicy"]."'placeholder='ID PRACOWNIKA'></br>
    <input type='submit' value='Usuń pracownika'>
 </form>
 </td>
