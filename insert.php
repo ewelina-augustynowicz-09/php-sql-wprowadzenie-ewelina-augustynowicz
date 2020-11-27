@@ -33,17 +33,6 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-
-
-echo "<li>".$sql;
-
-
-
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else 
-
-$conn->close();
 ?>
 
 <?php
