@@ -58,7 +58,7 @@
 </form>
 <form action="delete.php" method="POST">
    <input type="number" name="id_pracownicy"></br>
-   <input type="submit" value="Zapisz w zmiennej $_POST['id_pracownicy']">
+   <input type="submit" value="Usuń pracownika">
 </form>
 </body>
 </html>
