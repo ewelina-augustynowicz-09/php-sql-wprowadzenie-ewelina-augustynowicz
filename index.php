@@ -28,7 +28,7 @@ if (!$conn) {
 <a class="nav_link" href="dataiczas.php"> Data i czas</a><br />
 <a class="nav_link" href="formularz.html">Formularz</a><br />
 <a class="nav_link" href="insert.php">Insert</a><br />
-<a class="nav_link" href="daneDoBazy.html">Dane do bazy</a><br />
+<a class="nav_link" href="daneDoBazy.php">Dane do bazy</a><br />
 <a class="nav_link" href="petla.php">Pętla</a><br />    
 <a class="nav_link" href="delete.php">Delete</a><br /> 
 </div>
