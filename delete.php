@@ -45,7 +45,7 @@ echo $sql;
 
 if ($conn->query($sql) === TRUE) {
   echo "Record deleted successfully";
-  header ('Location:https://ewelina09.herokuapp.com/daneDoBazy.php');
+  header ("Location:https://ewelina09.herokuapp.com/daneDoBazy.php");
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
