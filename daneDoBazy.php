@@ -88,8 +88,8 @@ echo("<th>Imie</th>");
 echo("<th>Dział</th>");
 echo("<th>Zarobki</th>");
 echo("<th>Data_Urodzenia</th>");
+echo("<th>Dział</th>");
 echo("<th>Usuń pracownika</th>");
-echo("<th>ID</th>");
 while($row=$result->fetch_assoc()){ 
 echo("<tr>");
 echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>
