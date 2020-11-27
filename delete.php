@@ -1,4 +1,7 @@
+
 <?php
+echo("jestes w delete.php <br>");
+echo $_POST['id'];
 
 $servername = "mysql-ewelina.alwaysdata.net";
 $username = "ewelina";
@@ -12,26 +15,16 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
-$sql = "SELECT * FROM pracownicy";
-$result = $conn->query($sql);
 
-echo("<table border='1'>");
-echo("<th>ID</th>");
-echo("<th>Imie</th>");
-echo("<th>Dział</th>");
-echo("<th>DELETE</th>");
-while($row=$result->fetch_assoc()){
-  echo("<tr>"):
-  echo("<td>".row["id_pracownicy"]."</td><td>".row["Imie"]."</td><td>".row["Dział"]."</td><td>".row["DELETE"]."</td>);
-  <td>
-  <from action='delate.php' method='post'>
-  <input type='text' name='id' placeholder='do usuniecia' value='" .$row["id"]. "'>
-  <input type='submit' value='usun'>
-  </from>
+$sql = "DELETE FROM Pracownik WHERE id=".$_POST['id'];
 
-</td>");
-echo("</tr>");
+echo $sql;
+
+if ($conn->query($sql) === TRUE) {
+  echo "Record deleted successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
 }
-echo("</table>");
 
+$conn->close();
 ?>
