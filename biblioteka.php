@@ -15,7 +15,7 @@ if (!$conn) {
 
 <?php
 echo("<h1>Książki i autorzy:</h1>");
-$sql = 'SELECT * FROM biblTytul';
+$sql = 'SELECT * FROM bibliotekaTytuł';
 echo("<h2>Tytuły:</h2>");
 $result = $conn->query($sql);
 echo("<table>");
@@ -46,7 +46,7 @@ echo("</table>");
 ?>
 
 <?php
-$sql = 'SELECT * FROM biblAutor_biblTytul';
+$sql = 'SELECT * FROM bibliotekaAT';
 echo("<h2>ID:</h2>");
 echo("<li>".$sql);
 $result = $conn->query($sql);
@@ -62,19 +62,3 @@ echo("</tr>");
 echo("</table>");
 ?>
   
-<?php
-$sql = 'SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id';
-echo("<h2>Cała tabelka:</h2>");
-echo("<li>".$sql);
-$result = $conn->query($sql);
-echo("<table>");
-echo("<th>ID</th>");
-echo("<th>Autor</th>");
-echo("<th>Tytuł</th>");
-while($row=$result->fetch_assoc()){ 
-echo("<tr>");
-echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td>"); 
-echo("</tr>");
-}
-echo("</table>");        
-?>
