@@ -40,7 +40,7 @@ if (!$conn) {
 </html>
 <?php
 $sql = ("SELECT * FROM bibliotekaAutor");
-echo("<h1 class=SQL_excercise>Aułtorzy</h1>");
+echo("<h2 class=SQL_excercise>Aułtorzy</h2>");
 $result=$conn->query($sql);
 echo("<select name='Autor' id='id_autor'>");
 while($row=$result->fetch_assoc())
