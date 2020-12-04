@@ -53,7 +53,7 @@ echo("</select>");
 
 <?php
 $sql = ("SELECT * FROM bibliotekaTytuł");
-echo("<h1 class=SQL_excercise>książki</h1>");
+echo("<h2 class=SQL_excercise>książki</h2>");
 $result=$conn->query($sql);
 echo("<select name='Tytuł' id='id_Tytuł'>");
 while($row=$result->fetch_assoc())
@@ -66,17 +66,18 @@ echo("</select");
 
 <?php
 $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytuł WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
-echo("<h1 class=SQL_excercise>Wszystko</h1>");
+echo("<h2 class=SQL_excercise>Wszystko</h2>");
 $result=$conn->query($sql);
-echo("<table border=1>");
-echo("<th>id</th>");
-echo("<th>Autor</th>");
-echo("<th>Tytuł</th>");
+echo("<select name='Tytuł' id='id_Tytuł'>");
 while($row=$result->fetch_assoc())
 {
-echo("<tr>");
 echo("<td>".$row["id"]."</td><td>".$row["Autor"]."</td><td>".$row["Tytuł"]);
-echo("</tr>");
 }
-echo("</table>");
+echo("<select name='Autor' id='id_autor'>");
+while($row=$result->fetch_assoc())
+{
+echo("<option value=".$row["id_autor"]."</option><option vealu=>".$row["Autor"]."</option>");
+}
+echo("<input type='Submit' value='autor i ksiażka'><br>");
+echo("</select>");
 ?>
