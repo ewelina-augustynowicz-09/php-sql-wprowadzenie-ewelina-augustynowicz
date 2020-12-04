@@ -40,8 +40,9 @@ if (!$conn) {
 </html>
 
 <?php
+sql$=("SELECT * FROM bibliotekaAutor")
 echo("<h2>Autorzy</h2>");
-$result=$conn->query(SELECT * FROM bibliotekaAutor);
+$result=$conn->query($sql);
 echo("<hr />");
 echo("<select name='Autor' id='id_autor'>");
 
