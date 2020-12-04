@@ -31,7 +31,7 @@ if (!$conn) {
 <a class="nav_link" href="daneDoBazy.php">Dane do bazy</a><br />
 <a class="nav_link" href="petla.php">Pętla</a><br />    
 <a class="nav_link" href="delete.php">Delete</a><br /> 
-<a class="nav_link" href="biblioteka.php">Biblioteka</a><br /> 
+<a class="nav_link" href="ksiazki.php">Książki</a><br /> 
 </div>
    
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
