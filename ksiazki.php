@@ -52,3 +52,20 @@ echo("<td>".$row["id_autor"]."</td><td>".$row["Autor"]."</td>");
 echo("</tr>");
 }echo("</table>");
 ?>
+
+<?php
+$sql = ("SELECT * FROM bibliotekaTytuł");
+echo("<h1 class=SQL_excercise>książki</h1>");
+$result=$conn->query($sql);
+echo("<table border=1>");
+echo("<th>id</th>");
+echo("<th>Tytuł</th>");
+while($row=$result->fetch_assoc())
+{
+echo("<tr>");
+echo("<td>".$row["id_tytuł"]."</td><td>".$row["Tytuł"]."</td>");
+echo("</tr>");
+}
+echo("</table>");
+?>
+
