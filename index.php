@@ -40,7 +40,6 @@ if (!$conn) {
 
 </html>
 
-</html>
 
 <?php
 echo("<h2>Autorzy</h2>");
