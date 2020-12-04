@@ -71,12 +71,7 @@ $result=$conn->query($sql);
 echo("<select name='Tytuł' id='id_Tytuł'>");
 while($row=$result->fetch_assoc())
 {
-echo("<td>".$row["id"]."</td><td>".$row["Autor"]."</td><td>".$row["Tytuł"]);
-}
-echo("<select name='Autor' id='id_autor'>");
-while($row=$result->fetch_assoc())
-{
-echo("<option value=".$row["id_autor"]."</option><option vealu=>".$row["Autor"]."</option>");
+echo"<option vealu=>".$row["id_tytuł"]."</option><option vealu=>".$row["Tytuł"]."</option><option value=".$row["id_autor"]."</option><option vealu=>".$row["Autor"]."</option>");
 }
 echo("<input type='Submit' value='autor i ksiażka'><br>");
 echo("</select>");
