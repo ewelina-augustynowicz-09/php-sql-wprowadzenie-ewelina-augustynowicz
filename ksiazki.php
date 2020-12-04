@@ -66,13 +66,17 @@ echo("</select");
 
 <?php
 $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytuł WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
-echo("<h2 class=SQL_excercise>Wszystko</h2>");
+echo("<h1 class=SQL_excercise>Wszystko</h1>");
 $result=$conn->query($sql);
-echo("<select name='Tytuł' id='id_Tytuł'>");
+echo("<table border=1>");
+echo("<th>id</th>");
+echo("<th>Autor</th>");
+echo("<th>Tytuł</th>");
 while($row=$result->fetch_assoc())
 {
-echo"<option vealu=>".$row["id_tytuł"]."</option><option vealu=>".$row["Tytuł"]."</option><option value=".$row["id_autor"]."</option><option vealu=>".$row["Autor"]."</option>");
+echo("<tr>");
+echo("<td>".$row["id"]."</td><td>".$row["Autor"]."</td><td>".$row["Tytuł"]);
+echo("</tr>");
 }
-echo("<input type='Submit' value='autor i ksiażka'><br>");
-echo("</select>");
+echo("</table>");
 ?>
