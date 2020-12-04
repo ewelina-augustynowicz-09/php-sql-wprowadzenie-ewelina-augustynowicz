@@ -42,7 +42,8 @@ if (!$conn) {
 $sql = ("SELECT * FROM bibliotekaAutor");
 echo("<h2>Aułtorzy</h2>");
 $result=$conn->query($sql);
-echo("<select name='Autor' id='id_autor'>");
+<form action="bazaWypo.php" method="POST">
+echo("<input type="<select name='Autor' id='id_autor'>"");
 while($row=$result->fetch_assoc())
 {
 echo("<option value=".$row["id_autor"]."</option><option vealu=>".$row["Autor"]."</option>");
