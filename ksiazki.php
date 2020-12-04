@@ -45,9 +45,9 @@ $result=$conn->query($sql);
 echo("<select name='Autor' id='id_autor'>");
 while($row=$result->fetch_assoc())
 {
-echo("<option value=".$row["id_autor"]."".$row["Autor"]."</option>");
+echo("<option value=".$row["id_autor"]."</option><option vealu=>".$row["Autor"]."</option>");
 }
-echo("<input type='Submit' value='Autor:'><br>");
+echo("<input type='Submit' value='Autor'><br>");
 echo("</select>");
 ?>
 
@@ -55,16 +55,13 @@ echo("</select>");
 $sql = ("SELECT * FROM bibliotekaTytuł");
 echo("<h1 class=SQL_excercise>książki</h1>");
 $result=$conn->query($sql);
-echo("<table border=1>");
-echo("<th>id</th>");
-echo("<th>Tytuł</th>");
+echo("<select name='Tytuł' id='id_Tytuł'>");
 while($row=$result->fetch_assoc())
 {
-echo("<tr>");
-echo("<td>".$row["id_tytuł"]."</td><td>".$row["Tytuł"]."</td>");
-echo("</tr>");
+echo("<option vealu=>".$row["id_tytuł"]."</option><option vealu=>".$row["Tytuł"]."</option>");
 }
-echo("</table>");
+echo("<input type='Submit' value='książka'><br>");
+echo("</select");
 ?>
 
 <?php
