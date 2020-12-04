@@ -40,7 +40,7 @@ if (!$conn) {
 </html>
 
 <?php
-sql$=("SELECT * FROM bibliotekaAutor")
+$sql=("SELECT * FROM bibliotekaAutor")
 echo("<h2>Autorzy</h2>");
 $result=$conn->query($sql);
 echo("<hr />");
