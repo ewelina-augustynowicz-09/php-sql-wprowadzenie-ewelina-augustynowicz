@@ -39,17 +39,3 @@ if (!$conn) {
 
 
 </html>
-
-
-<?php
-echo("<h2>Autorzy</h2>");
-$result=$conn->query(SELECT * FROM bibliotekaAutor);
-echo("<hr/>");
-echo("<th>Autor</th>");
-echo(<select name="title" id="title">);
-while($row=$result->fetch_assoc())
-{
-echo("<option value=>".$row["id_autor"]."</td><td>".$row["Autor"]."</option>");
-}
-echo("<hr/>");
-?>
