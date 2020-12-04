@@ -42,16 +42,15 @@ if (!$conn) {
 <?php
 echo("<h2>Autorzy</h2>");
 $result=$conn->query(SELECT * FROM bibliotekaAutor);
-echo("<table>");
-echo("<th>id</th>");
-echo("<th>Autor</th>");
-while($row=$result->fetch_assoc())
-{
-echo("<tr>");
-echo("<td>".$row["id_autor"]."</td><td>".$row["Autor"]."</td>");
-echo("</tr>");
-}
-echo("</table>");
-?>
+echo("<hr />");
+echo("<select name='Autor' id='id_autor'>");
 
+while($row=$result->fetch_assoc()){
+
+echo("<option value=".$row['id_autor'].">".$row["Autor"]."</option>");
+}
+echo("<input type='Submit' value='Autorzy:'><br>");
+echo("</select>");
+echo("<hr />");
+?>
 
