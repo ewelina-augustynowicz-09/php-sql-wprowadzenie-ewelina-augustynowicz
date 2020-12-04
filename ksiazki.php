@@ -40,7 +40,7 @@ if (!$conn) {
 </html>
 <?php
 $sql = ("SELECT * FROM bibliotekaAutor");
-echo("<h2 class=SQL_excercise>Aułtorzy</h2>");
+echo("<h2>Aułtorzy</h2>");
 $result=$conn->query($sql);
 echo("<select name='Autor' id='id_autor'>");
 while($row=$result->fetch_assoc())
@@ -53,7 +53,7 @@ echo("</select>");
 
 <?php
 $sql = ("SELECT * FROM bibliotekaTytuł");
-echo("<h2 class=SQL_excercise>książki</h2>");
+echo("<h2>książki</h2>");
 $result=$conn->query($sql);
 echo("<select name='Tytuł' id='id_Tytuł'>");
 while($row=$result->fetch_assoc())
