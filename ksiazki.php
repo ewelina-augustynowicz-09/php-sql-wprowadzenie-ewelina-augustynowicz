@@ -66,7 +66,7 @@ echo("</select");
 
 <?php
 $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytuł WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
-echo("<h1 class=SQL_excercise>Wszystko</h1>");
+echo("<h2>Wszystko</h2>");
 $result=$conn->query($sql);
 echo("<table border=1>");
 echo("<th>id</th>");
