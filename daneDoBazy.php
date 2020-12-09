@@ -67,7 +67,7 @@
 $servername = "mysql-ewelina09.alwaysdata.net";
 $username = "ewelina09";
 $password = "Ewelina@123456";
-$dbname = "ewelina_09_09";
+$dbname = "ewelina09_09";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
