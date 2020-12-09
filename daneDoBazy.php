@@ -64,10 +64,10 @@
 </html>
 
 <?php
-$servername = "mysql-ewelina.alwaysdata.net";
-$username = "ewelina";
-$password = "ewelinailukas";
-$dbname = "ewelina_09";
+$servername = "mysql-ewelina09.alwaysdata.net";
+$username = "ewelina09";
+$password = "Ewelina@123456";
+$dbname = "ewelina_09_09";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
