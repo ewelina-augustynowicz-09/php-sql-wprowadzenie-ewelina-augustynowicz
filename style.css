@@ -7,6 +7,9 @@ background-color: #EE82EE;
   /*height: 100px;*/
 color: purple;
   margin: 20px;
+  text-decoration: none;
+  background-color:lightcoral;
+  padding: 10px;
 }
 
 .button {
