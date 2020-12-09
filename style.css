@@ -3,7 +3,10 @@ background-color: #EE82EE;
 }
 
 .nav_link{
+  /* width: 200px;*/
+  /*height: 100px;*/
 color: purple;
+  margin: 20px;
 }
 
 .button {
