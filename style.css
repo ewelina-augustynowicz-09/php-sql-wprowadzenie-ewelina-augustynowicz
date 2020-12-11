@@ -5,6 +5,7 @@ background-color: #EE82EE;
 .nav_link{
   /* width: 200px;*/
   /*height: 100px;*/
+  float: left
 color: purple;
   margin: 20px;
   text-decoration: none;
