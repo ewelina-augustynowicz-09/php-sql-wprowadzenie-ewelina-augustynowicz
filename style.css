@@ -5,8 +5,8 @@ background-color: #EE82EE;
 .nav_link{
 text-decoration: none;
 background-color: lightblue;
-padding: 8px;
-width: 10%;
+padding: 10px;
+width: 20%;
 }
 
 .container {
@@ -17,7 +17,7 @@ width: 10%;
 
 .colorBlue {
   background-color: #AD02B3;
-  width: 10%;
+  width: 20%;
 
 .button {
   bottom: auto;
