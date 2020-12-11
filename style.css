@@ -9,6 +9,12 @@ padding: 10px;
 width: 20%;
 }
 
+.container {
+  background-color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .colorBlue {
   background-color: #AD02B3;
   width: 20%;
