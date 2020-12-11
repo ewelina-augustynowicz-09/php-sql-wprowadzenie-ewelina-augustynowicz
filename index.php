@@ -39,6 +39,7 @@ if (!$conn) {
 <a class="nav_link" href="delete.php">Delete</a> 
 <a class="nav_link" href="ksiazki.php">Książki</a>
   </ul>
+  </div>
 </div>
    
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
