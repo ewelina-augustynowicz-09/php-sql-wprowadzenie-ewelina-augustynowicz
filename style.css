@@ -3,14 +3,14 @@ background-color: #EE82EE;
 }
 
 .nav_link{
-  /* width: 200px;*/
-  /*height: 100px;*/
-  float: left
-color: purple;
-  margin: 20px;
-  text-decoration: none;
-  background-color: lightblue;
-  padding: 10px;
+float: left
+text color: purple;
+margin-top: 10px;
+margin-left:20px;
+margin-right:20px;
+text-decoration: none;
+background-color: lightblue;
+padding: 10px;
 }
 
 .button {
