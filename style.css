@@ -5,19 +5,19 @@ background-color: #EE82EE;
 .nav_link{
 text-decoration: none;
 background-color: lightblue;
-padding: 10px;
-width: 20%;
+padding: 8px;
+width: 10%;
 }
 
 .container {
-  background-color: lightgray;
+  background-color: #EE82EE;
   display: flex;
   flex-wrap: wrap;
 }
 
 .colorBlue {
   background-color: #AD02B3;
-  width: 20%;
+  width: 10%;
 
 .button {
   bottom: auto;
