@@ -20,7 +20,8 @@ width: 210%;
   width: 30%;
   
   .colorGreen {
-  width: 70%;
+   background-color: #EE82EE;
+  width: 60%;
 }
 
 .button {
