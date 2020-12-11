@@ -62,11 +62,12 @@ if (!$conn) {
     <br>
 <a class="nav_link" href="ksiazki.php">Książki</a>
   </ul>
-  </div>
+
   
   <div class="item colorGreen">
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
     <h1><b>Strona główna</b></h1>
+  </div>
   </div>
 </div>
 
