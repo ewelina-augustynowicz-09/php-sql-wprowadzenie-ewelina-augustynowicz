@@ -18,6 +18,10 @@ width: 210%;
 .colorBlue {
   background-color: #AD02B3;
   width: 30%;
+  
+  .colorGreen {
+  width: 70%;
+}
 
 .button {
   bottom: auto;
