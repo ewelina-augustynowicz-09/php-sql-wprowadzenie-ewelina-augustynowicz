@@ -29,7 +29,7 @@ if (!$conn) {
    <div class="button"><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></div>
    
   
-  <div class="item colorBlue">menu boczne
+  <div class="item colorBlue">
   <ul>
   <br>
   <br>
