@@ -24,6 +24,7 @@ if (!$conn) {
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <div class="item colorBlue">menu boczne</div>
   <ul>
 <div class="button"><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></div>
 <a class="nav_link" href="index.php"> Strona głowna</a>
