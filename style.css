@@ -10,17 +10,24 @@ width: 210%;
 }
 
 .container {
-  background-color: #EE82EE;
+  background-color: lightgray;
   display: flex;
   flex-wrap: wrap;
 }
 
+.colorRed {
+  background-color: red;
+  width: 100%;
+}
+
 .colorBlue {
-  background-color: #AD02B3;
-  width: 30%;
-  
-  .colorGreen {
-  width: 60%;
+  background-color: lightblue;
+  width: 20%;
+}
+
+.colorGreen {
+  background-color: lightgreen;
+  width: 70%;
 }
 
 .button {
