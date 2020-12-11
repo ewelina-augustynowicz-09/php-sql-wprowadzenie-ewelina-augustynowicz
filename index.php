@@ -70,4 +70,5 @@ if (!$conn) {
     <h1><b>Strona główna</b></h1>
 </div>
 
+</body>
 </html>
