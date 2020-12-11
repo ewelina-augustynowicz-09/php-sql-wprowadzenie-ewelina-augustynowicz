@@ -18,7 +18,7 @@ if (!$conn) {
 </head>
 <body>
 <div class="button"><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></div><br>
-<a class="nav_link" href="index.php"> Strona głowna</a><br />
+<a class="nav_link" href="index.php"> Strona głowna</a>
 <a class="nav_link" href="pracownicy.php"> Pracownicy </a>
 <a class="nav_link" href="pracownicyiorganizacja.php"> Pracownicy i organizacja </a>
 <a class="nav_link" href="funkcjeAgregujace.php"> Funkcje agregujące </a>
