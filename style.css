@@ -9,6 +9,10 @@ padding: 10px;
 width: 20%;
 }
 
+.colorBlue {
+  background-color: lightblue;
+  width: 20%;
+
 .button {
   bottom: auto;
   background-color: white;
