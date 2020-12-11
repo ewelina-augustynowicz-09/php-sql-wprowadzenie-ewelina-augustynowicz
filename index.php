@@ -64,9 +64,10 @@ if (!$conn) {
   </ul>
   </div>
 </div>
-   
+
+<div class="item colorGreen">
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
     <h1><b>Strona główna</b></h1>
-
+</div>
 
 </html>
