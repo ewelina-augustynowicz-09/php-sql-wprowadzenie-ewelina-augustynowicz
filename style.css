@@ -10,7 +10,6 @@ width: 210%;
 }
 
 .container {
-  background-color: #EE82EE;
   display: flex;
   flex-wrap: wrap;
 }
