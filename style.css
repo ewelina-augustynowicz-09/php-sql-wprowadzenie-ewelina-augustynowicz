@@ -20,6 +20,10 @@ width: 210%;
   width: 100%;
 }
 
+.ul {
+background-color: #CC00FF;
+}
+
 .colorBlue {
   background-color: lightblue;
   width: 30%;
