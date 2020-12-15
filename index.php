@@ -25,12 +25,9 @@ if (!$conn) {
 </head>
 <body>
 <div class="container"
-   <div class="item colorRed">
-   <div class="button"><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></div>
-   
-  
- 
+ <div class="item colorRed">
   <ul>
+  <div class="button"><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></div>
   <br>
   <br>
   <a class="nav_link" href="index.php"> Strona głowna</a>
