@@ -24,9 +24,10 @@ if (!$conn) {
 </head>
 <body>
 <div class="container"
+     
      <div class="item colorRed">
-  
   <ul>
+
   <div class="button"><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></div>
   <br>
   <br>
@@ -62,7 +63,8 @@ if (!$conn) {
   <br>
   <a class="nav_link" href="ksiazki.php">Książki</a>
   </ul>
-  </div>
+  
+  
   
 <div class="item colorBlue">
      <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
