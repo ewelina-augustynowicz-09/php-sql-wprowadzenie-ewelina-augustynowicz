@@ -72,7 +72,7 @@ if (!$conn) {
 </div>
 </html>
 
-
+<div class=".colorGreen>
 <?php
 echo ("<h2><p>zadanie 1 - Pracownicy tylko z działu 2</p></h2>");
 $result = $conn->query('SELECT  * FROM pracownicy WHERE dzial=2');
