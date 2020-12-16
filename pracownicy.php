@@ -26,7 +26,7 @@ if (!$conn) {
 <div class="container"
 
 <div class="item colorRed">
-  <ul>
+  
   <div class="button"><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></div>
   <br>
   <br>
@@ -61,14 +61,13 @@ if (!$conn) {
   <br>
   <br>
   <a class="nav_link" href="ksiazki.php">Książki</a>
-  </ul>
-
   
 <div class="item colorBlue">
-<h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
+     <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
     <h1><b>Pracownicy</b></h1>
 
 <div class="item colorGreen">
+
 <?php
 echo ("<h2><p>zadanie 1 - Pracownicy tylko z działu 2</p></h2>");
 $result = $conn->query('SELECT  * FROM pracownicy WHERE dzial=2');
@@ -125,7 +124,7 @@ echo("</tr>");
 echo("</table>")
 ?>
 
-  </div>
+</div>
 </div>
 </div>
 </html>
