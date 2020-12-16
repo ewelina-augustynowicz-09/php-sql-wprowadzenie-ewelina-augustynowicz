@@ -67,11 +67,8 @@ if (!$conn) {
 <div class="item colorBlue">
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
     <h1><b>Pracownicy</b></h1>
-</div>
-</div>
-</div>
-</html>
 
+<div class="item colorGreen">
 <?php
 echo ("<h2><p>zadanie 1 - Pracownicy tylko z działu 2</p></h2>");
 $result = $conn->query('SELECT  * FROM pracownicy WHERE dzial=2');
@@ -127,3 +124,8 @@ echo("</tr>");
 }
 echo("</table>")
 ?>
+
+  </div>
+</div>
+</div>
+</html>
