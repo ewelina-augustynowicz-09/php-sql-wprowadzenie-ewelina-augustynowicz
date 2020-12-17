@@ -25,7 +25,7 @@ if (!$conn) {
 <body>
 <div class="container"
      
-      <div class="item colorRed"><ul>
+<div class="item colorRed"><ul>
   <div class="button"><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></div>
   <br>
   <br>
