@@ -30,27 +30,26 @@ if (!$conn) {
           <ul>
             <li><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></li>
             <br>
-            
             <li><a class="nav_link" href="index.php"> Strona głowna</a></li>
-
+            <br>
             <li><a class="nav_link" href="pracownicy.php"> Pracownicy </a></li>
-
+            <br>
             <li><a class="nav_link" href="pracownicyiorganizacja.php"> Pracownicy i organizacja </a></li>
-
+            <br>
             <li><a class="nav_link" href="funkcjeAgregujace.php"> Funkcje agregujące</a></li>
-
+            <br>
             <li><a class="nav_link" href="dataiczas.php"> Data i czas</a></li>
-
+            <br>
             <li><a class="nav_link" href="formularz.html">Formularz</a></li>
-
+            <br>
             <li><a class="nav_link" href="insert.php">Insert</a></li>
-
+            <br>
             <li><a class="nav_link" href="daneDoBazy.php">Dane do bazy</a></li>
-
+            <br>
             <li><a class="nav_link" href="petla.php">Pętla</a></li>
-
+            <br>
             <li><a class="nav_link" href="delete.php">Delete</a></li>
-
+            <br>
             <li><a class="nav_link" href="ksiazki.php">Książki</a></li>
           </ul>
         </div>
