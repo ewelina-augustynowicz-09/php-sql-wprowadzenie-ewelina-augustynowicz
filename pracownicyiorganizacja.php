@@ -49,7 +49,7 @@ if (!$conn) {
             <br>
             <li><a class="nav_link" href="ksiazki.php">Książki</a></li>
           </ul>
-        </div>
+       
       
 
        <div class="item colorBlue">
