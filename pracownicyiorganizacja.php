@@ -12,6 +12,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 ?>
+
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -22,8 +23,13 @@ if (!$conn) {
   </head>
   <body>
     <div class="container">
-      <div class="item colorRed">
+            <div class="item colorBlue">
+        <h2>Ewelina Augustynowicz klasa 2Ti grupa 2 numer 1</h2>
+        <h1><b>Strona główna</b></h1> 
+      </div> 
+    <div class="item colorRed">
         <div class="nav">
+          <h2> Menu:</h2>
           <ul>
             <li><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></li>
             <br>
@@ -48,20 +54,11 @@ if (!$conn) {
             <li><a class="nav_link" href="delete.php">Delete</a></li>
             <br>
             <li><a class="nav_link" href="ksiazki.php">Książki</a></li>
-          </ul>
-           </div>
+          </ul> 
+      </div> 
       </div>
-       
-      
-
-       <div class="item colorBlue">
-       <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
-       <h1><b>Pracownicy i organizacja</b></h1>
-      </div>
-
-
+    
 <div class="item colorGreen">
-
 <?php
 echo ("<h2><p>zadanie 1 - Pracownicy z nazwą działów </p></h2>");
 $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
