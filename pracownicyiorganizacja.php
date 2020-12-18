@@ -18,14 +18,14 @@ if (!$conn) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Strona główna</title>
+    <title>Pracowniy i organizacja</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
             <div class="item colorBlue">
         <h2>Ewelina Augustynowicz klasa 2Ti grupa 2 numer 1</h2>
-        <h1><b>Strona główna</b></h1> 
+        <h1><b>Pracownicy i organizacja</b></h1> 
       </div> 
     <div class="item colorRed">
         <div class="nav">
