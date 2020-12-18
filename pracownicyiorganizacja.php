@@ -49,12 +49,15 @@ if (!$conn) {
             <br>
             <li><a class="nav_link" href="ksiazki.php">Książki</a></li>
           </ul>
+           </div>
+      </div>
        
       
 
        <div class="item colorBlue">
        <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
-       <h1><b>Pracownicy i organizacja</b></h1> 
+       <h1><b>Pracownicy i organizacja</b></h1>
+      </div>
 
 
 <div class="item colorGreen">
