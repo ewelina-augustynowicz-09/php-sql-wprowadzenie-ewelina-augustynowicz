@@ -28,24 +28,16 @@ if (!$conn) {
       <div class="item colorRed">
         <div class="nav">
           <ul>
-            <li>
-              <a
-                href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie"
-                >github</a
-              >
-            </li>
-
+            <li><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></li>
+            <br>
+            <br>
             <li><a class="nav_link" href="index.php"> Strona głowna</a></li>
 
             <li><a class="nav_link" href="pracownicy.php"> Pracownicy </a></li>
 
-            <li><a class="nav_link" href="pracownicyiorganizacja.php">
-              Pracownicy i organizacja
-              </a></li>
+            <li><a class="nav_link" href="pracownicyiorganizacja.php"> Pracownicy i organizacja </a></li>
 
-            <li><a class="nav_link" href="funkcjeAgregujace.php">
-              Funkcje agregujące
-              </a></li>
+            <li><a class="nav_link" href="funkcjeAgregujace.php"> Funkcje agregujące</a></li>
 
             <li><a class="nav_link" href="dataiczas.php"> Data i czas</a></li>
 
