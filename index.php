@@ -27,10 +27,8 @@ if (!$conn) {
     <div class="container">
             <div class="item colorBlue">
         <h2>Ewelina Augustynowicz klasa 2Ti grupa 2 numer 1</h2>
-        <h1><b>Strona główna</b></h1>
-      </div>
-     </div>
-     <div class="item colorRed">
+        <h1><b>Strona główna</b></h1> </div> </div>
+    <div class="item colorRed">
         <div class="nav">
           <h2> Menu:</h2>
           <ul>
@@ -57,9 +55,8 @@ if (!$conn) {
             <li><a class="nav_link" href="delete.php">Delete</a></li>
             <br>
             <li><a class="nav_link" href="ksiazki.php">Książki</a></li>
-          </ul>
-        </div>
-      </div>
+          </ul> </div> </div>
+    
 <div class="item colorGreen">
   <h3> something </h3>
     </div>
