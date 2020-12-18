@@ -15,18 +15,22 @@ if (!$conn) {
 ?>
 
 <html>
-<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Strona główna</title>
+    <title>Pracownicy</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="item colorRed">
+            <div class="item colorBlue">
+        <h2>Ewelina Augustynowicz klasa 2Ti grupa 2 numer 1</h2>
+        <h1><b>Pracownicy</b></h1> 
+      </div> 
+    <div class="item colorRed">
         <div class="nav">
+          <h2> Menu:</h2>
           <ul>
             <li><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></li>
             <br>
@@ -51,18 +55,11 @@ if (!$conn) {
             <li><a class="nav_link" href="delete.php">Delete</a></li>
             <br>
             <li><a class="nav_link" href="ksiazki.php">Książki</a></li>
-          </ul>
-        </div>
+          </ul> 
+      </div> 
       </div>
-
-  
-<div class="item colorBlue">
-     <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
-    <h1><b>Pracownicy</b></h1>
-  </div>
-
+    
 <div class="item colorGreen">
-
 <?php
 echo ("<h2><p>zadanie 1 - Pracownicy tylko z działu 2</p></h2>");
 $result = $conn->query('SELECT  * FROM pracownicy WHERE dzial=2');
