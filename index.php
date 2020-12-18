@@ -30,7 +30,7 @@ if (!$conn) {
           <ul>
             <li><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></li>
             <br>
-            <br>
+            
             <li><a class="nav_link" href="index.php"> Strona głowna</a></li>
 
             <li><a class="nav_link" href="pracownicy.php"> Pracownicy </a></li>
