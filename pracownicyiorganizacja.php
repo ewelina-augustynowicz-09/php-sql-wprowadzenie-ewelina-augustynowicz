@@ -57,7 +57,7 @@ if (!$conn) {
     <h1><b>Pracownicy i organizacja</b></h1>
 
 
-
+<div class="item colorGreen">
 
 <?php
 echo ("<h2><p>zadanie 1 - Pracownicy z nazwą działów </p></h2>");
@@ -292,3 +292,8 @@ echo("</tr>");
 }
 echo("</table>");
 ?>
+
+  </div>
+</div>
+</div>
+</html>
