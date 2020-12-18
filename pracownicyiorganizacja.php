@@ -52,9 +52,9 @@ if (!$conn) {
         </div>
       
 
-<div class="item colorBlue">
-<h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
-    <h1><b>Pracownicy i organizacja</b></h1> </div>
+       <div class="item colorBlue">
+       <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
+       <h1><b>Pracownicy i organizacja</b></h1> 
 
 
 <div class="item colorGreen">
@@ -293,7 +293,7 @@ echo("</tr>");
 echo("</table>");
 ?>
 
-  </div>
+</div>
 </div>
 </div>
 </html>
