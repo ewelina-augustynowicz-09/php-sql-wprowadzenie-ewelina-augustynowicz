@@ -39,27 +39,27 @@ if (!$conn) {
 
             <li><a class="nav_link" href="pracownicy.php"> Pracownicy </a></li>
 
-            <a class="nav_link" href="pracownicyiorganizacja.php">
+            <li><a class="nav_link" href="pracownicyiorganizacja.php">
               Pracownicy i organizacja
-            </a>
+              </a></li>
 
-            <a class="nav_link" href="funkcjeAgregujace.php">
+            <li><a class="nav_link" href="funkcjeAgregujace.php">
               Funkcje agregujące
-            </a>
+              </a></li>
 
-            <a class="nav_link" href="dataiczas.php"> Data i czas</a>
+            <li><a class="nav_link" href="dataiczas.php"> Data i czas</a></li>
 
-            <a class="nav_link" href="formularz.html">Formularz</a>
+            <li><a class="nav_link" href="formularz.html">Formularz</a></li>
 
-            <a class="nav_link" href="insert.php">Insert</a>
+            <li><a class="nav_link" href="insert.php">Insert</a></li>
 
-            <a class="nav_link" href="daneDoBazy.php">Dane do bazy</a>
+            <li><a class="nav_link" href="daneDoBazy.php">Dane do bazy</a></li>
 
-            <a class="nav_link" href="petla.php">Pętla</a>
+            <li><a class="nav_link" href="petla.php">Pętla</a></li>
 
-            <a class="nav_link" href="delete.php">Delete</a>
+            <li><a class="nav_link" href="delete.php">Delete</a></li>
 
-            <a class="nav_link" href="ksiazki.php">Książki</a>
+            <li><a class="nav_link" href="ksiazki.php">Książki</a></li>
           </ul>
         </div>
       </div>
