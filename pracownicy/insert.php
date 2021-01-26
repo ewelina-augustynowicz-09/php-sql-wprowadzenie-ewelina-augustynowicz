@@ -48,10 +48,10 @@
 echo("jestes w insert.php");
 echo $_POST['name'];
 
-$servername = "mysql-ewelina09.alwaysdata.net";
-$username = "ewelina09";
+$servername = "mysql-ewelina.alwaysdata.net";
+$username = "ewelina";
 $password = "Ewelina@123456";
-$dbname = "ewelina09_09";
+$dbname = "ewelina_ewelina";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {

@@ -50,10 +50,10 @@
 <?php
 echo $_POST['id_pracownicy'];
 
-$servername = "mysql-ewelina09.alwaysdata.net";
-$username = "ewelina09";
+$servername = "mysql-ewelina.alwaysdata.net";
+$username = "ewelina";
 $password = "Ewelina@123456";
-$dbname = "ewelina09_09";
+$dbname = "ewelina_ewelina";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
