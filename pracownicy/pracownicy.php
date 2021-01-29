@@ -26,7 +26,7 @@ if (!$conn) {
     <div class="container">
             <div class="item colorBlue">
         <h2>Ewelina Augustynowicz klasa 2Ti grupa 2 numer 1</h2>
-        <h1><b>Pracownicy</b></h1> 
+        <h1><b>Ewelina Augustynowicz 2Ti gr2</b></h1> 
       </div> 
     <div class="item colorRed">
         <div class="nav">
