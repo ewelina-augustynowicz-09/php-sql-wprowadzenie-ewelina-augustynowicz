@@ -1,19 +1,19 @@
-<?php
+<!-- <?php
 
-$servername = "mysql-ewelina.alwaysdata.net";
-$username = "ewelina";
-$password = "Ewelina@123456";
-$dbname = "ewelina_ewelina";
+//$servername = "mysql-ewelina.alwaysdata.net";
+//$username = "ewelina";
+//$password = "Ewelina@123456";
+//$dbname = "ewelina_ewelina";
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+//$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
+//if (!$conn) {
+//  die("Connection failed: " . mysqli_connect_error());
+//}
 
-?>
+?> -->
 
 <html>
   <head>
