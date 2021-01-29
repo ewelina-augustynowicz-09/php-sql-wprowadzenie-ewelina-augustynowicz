@@ -19,7 +19,7 @@
           <ul>
             <li><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></li>
             <br>
-            <li><a class="nav_link" href="pracownicy/index.php"> Strona głowna</a></li>
+            <li><a class="nav_link" href="index.php"> Strona głowna</a></li>
             <br>
             <li><a class="nav_link" href="pracownicy/pracownicy.php"> Pracownicy </a></li>
             <br>

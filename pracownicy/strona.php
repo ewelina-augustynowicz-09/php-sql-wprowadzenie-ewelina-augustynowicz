@@ -4,7 +4,7 @@
 </head>
 <body>
 <div class="button"><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></div><br>
-<a class="nav_link" href="pracownicy/index.php"> Strona głowna</a><br />
+<a class="nav_link" href="index.php"> Strona głowna</a><br />
 <a class="nav_link" href="pracownicy/pracownicy.php"> Pracownicy </a><br />
 <a class="nav_link" href="pracownicyiorganizacja.php"> Pracownicy i organizacja </a><br />
 <a class="nav_link" href="pracownicy/funkcjeAgregujace.php"> Funkcje agregujące </a><br />
